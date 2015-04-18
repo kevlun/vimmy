@@ -10,9 +10,6 @@ imap <S-Tab> <C-d>
 vmap <Tab> :><CR>gv
 vmap <S-Tab> :<<CR>gv
 
-" Search with Ack
-nmap <leader>a <Esc>:Ack!
-
 " Pane resize
 map <silent> <S-Right> <C-w><
 map <silent> <S-Down> <C-W>-
@@ -25,15 +22,23 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Folding
+" NERDTree Settings
+nnoremap <F1> :set hlsearch!<CR>
+map <F2> :set list!<cr>
+map <F3> :execute 'NERDTreeToggle ' . getcwd()<cr>
+map <F4> :NERDTree .<cr>
+"map <F4> :NERDTreeFromBookmark
+nnoremap <F5> :TlistToggle<CR>
+
+" FIX: Replace with leader keymaps instead
 inoremap <C-z> <C-O>za
 nnoremap <C-z> za
 onoremap <C-z> <C-C>za
 vnoremap <C-z> zf
 
-nnoremap <F1> :set hlsearch!<CR>
-map <F2> :set list!<cr>
-map <F3> :execute 'NERDTreeToggle ' . getcwd()<cr>
-map <F4> :NERDTreeFromBookmark
-nnoremap <F5> :TlistToggle<CR>
+" EasyMotion
+"map  / <Plug>(easymotion-sn)
+"omap / <Plug>(easymotion-tn)
+"map  n <Plug>(easymotion-next)
+"map  N <Plug>(easymotion-prev)
 

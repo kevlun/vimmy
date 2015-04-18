@@ -1,3 +1,6 @@
+" PLUGIN: Coffee-Script
+" -------------------------------------------------------------------------------------------------
+
 " CoffeeScript linter and Watcher settings
 let coffee_compile_vert = 1
 let coffee_watch_vert = 1

@@ -3,18 +3,27 @@
 " Set syntax highlighting on
 syntax on
 
-" Enable mouse support
-set mouse=a
+set mouse=a                         " Enable mouse
 set relativenumber
 set number
-set backup
+set shell=/bin/bash\ -li
 
-" Create backup and tmp directories
+" Disable Backup
+" -------------------------------------
+set nobackup
+set noswapfile
+set nowritebackup
+
+" Enable Backup
+" -------------------------------------
+"set backup
+" Creat backup and tmp directories
 " Delete old temp files on start
-silent execute '!mkdir -p ~/.vim/temp'
-silent execute '!rm -f ~/.vim/temp/*~'
-set backupdir=~/.vim/temp
-set directory=~/.vim/temp
+"silent execute '!mkdir -p ~/.vim/temp'
+"silent execute '!rm -f ~/.vim/temp/*~'
+"set backupdir=~/.vim/temp
+"set directory=~/.vim/temp
+" -------------------------------------
 
 " Fix Backspace
 set backspace=indent,eol,start
@@ -34,8 +43,12 @@ set smartindent
 set expandtab
 set cursorline
 set foldlevel=99
+set foldenable
 set antialias
 set linespace=6
+set noequalalways
 
 " Set Invisble characters
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:▸\ ,eol:¬
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux

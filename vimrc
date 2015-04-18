@@ -1,11 +1,11 @@
 " VIMMY
 " -----------------------------------------------------------------------------
 " Description: Simple and Easy VIM Setup
-" Author: Kevin Lund <kevin@macmail.se>
+" Url: https://github.com/kevlun/vimmy
+" Author: Kevin Lund
 
 " From 'VIMRC you’re doing it wrong! <http://bamgreeneggsandham.com/2013/11/19/vimrc-your-doing-it-wrong/>'
-let s:vim_home = '~/.vim'
-
+let s:vimmy = '~/.vimmy/'
 let config_list = [
     \ 'base.vim',
     \ 'plugins.vim',
@@ -18,7 +18,7 @@ let config_list = [
     \]
 
 for files in config_list
-    for f in split(glob(s:vim_home.files), '\n')
+    for f in split(glob(s:vimmy.files), '\n')
         exec 'source '.f
     endfor
 endfor

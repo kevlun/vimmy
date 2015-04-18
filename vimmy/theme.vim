@@ -3,7 +3,6 @@ set background=dark
 colorscheme hybrid
 
 if has("gui_running")
-    " Set Font
     set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
 
     " Hide scrollbars
@@ -18,6 +17,11 @@ if has("gui_running")
 
     " Transparency
     set transparency=5
+
+    " GUI Specific theme
+    "----------------------------
+    " set background=light
+    " colorscheme solarized
 else
     set t_Co=256
     set term=xterm-256color

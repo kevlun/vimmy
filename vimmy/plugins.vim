@@ -1,44 +1,60 @@
-" Setup vundle plugins
+" PLUGIN SETUP - NEOBUNDLE
+" -------------------------------------------------------------------------------------------------
 set nocompatible
 filetype off
 
-if !isdirectory(expand("~/.vim/bundle/Vundle.vim/.git"))
-    !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if !isdirectory(expand("~/.vim/bundle/neobundle.vim/.git"))
+    !git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'https://github.com/bling/vim-airline.git'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-fugitive'
-Plugin 'mileszs/ack.vim'
-Plugin 'idanarye/vim-merginal'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'mhinz/vim-signify'
-Plugin 'jmcantrell/vim-virtualenv'
-Plugin 'kien/ctrlp.vim'
-Plugin 'taglist.vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'Shougo/neocomplete.vim'
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+" Let NeoBundle manage NeoBundle
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" PLUGINS
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'gmarik/Vundle.vim'
+NeoBundle 'https://github.com/bling/vim-airline.git'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'idanarye/vim-merginal'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle 'jmcantrell/vim-virtualenv'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'taglist.vim'
+NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'public/vim-sort-python-imports'
 
 " THEMES
-Plugin 'morhetz/gruvbox'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'DAddYE/soda.vim'
-Plugin 'croaky/vim-colors-github'
-Plugin 'sickill/vim-monokai'
-Plugin 'jonathanfilip/vim-lucius'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'zeis/vim-kolor'
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'morhetz/gruvbox'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'DAddYE/soda.vim'
+NeoBundle 'croaky/vim-colors-github'
+NeoBundle 'sickill/vim-monokai'
+NeoBundle 'jonathanfilip/vim-lucius'
+NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'zeis/vim-kolor'
+NeoBundle 'notpratheek/vim-luna'
+NeoBundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
-" End Vundle
-call vundle#end()
+" -------------------------------------------------------------------------------------------------
+call neobundle#end()
 
 filetype plugin on
 filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
