@@ -35,6 +35,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'public/vim-sort-python-imports'
+NeoBundle 'davidhalter/jedi-vim'
 
 " THEMES
 " -------------------------------------------------------------------------------------------------
