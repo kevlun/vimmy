@@ -15,27 +15,58 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " PLUGINS
 " -------------------------------------------------------------------------------------------------
-NeoBundle 'gmarik/Vundle.vim'
+
+" UI & General
+" -------------------------------------------------------------------------------------------------
 NeoBundle 'https://github.com/bling/vim-airline.git'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'Xuyuanp/nerdtree-git-plugin'
-NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'idanarye/vim-merginal'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'jmcantrell/vim-virtualenv'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'ivalkeen/vim-ctrlp-tjump'
 NeoBundle 'taglist.vim'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tsukkee/unite-tag'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'Shougo/vimproc.vim', {
+\ 'build' : {
+\   'windows' : 'tools\\update-dll-mingw',
+\   'cygwin' : 'make -f make_cygwin.mak',
+\   'mac' : 'make -f make_mac.mak',
+\   'linux' : 'make',
+\   'unix' : 'gmake',
+\   },
+\ }
+
+" Linter
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'scrooloose/syntastic'
+
+" Git
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'idanarye/vim-merginal'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'mhinz/vim-signify'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+
+" Coffee-Script
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'kchmck/vim-coffee-script'
+
+" PHP
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'vim-scripts/phpfolding.vim', {'script_type': 'ftplugin'}
+
+" Python
+" -------------------------------------------------------------------------------------------------
 NeoBundle 'public/vim-sort-python-imports'
 NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'jmcantrell/vim-virtualenv'
 
 " THEMES
 " -------------------------------------------------------------------------------------------------
@@ -49,13 +80,18 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'zeis/vim-kolor'
 NeoBundle 'notpratheek/vim-luna'
 NeoBundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+NeoBundle 'tomasr/molokai'
+NeoBundle 'reedes/vim-colors-pencil'
+NeoBundle 'noahfrederick/vim-hemisu'
+NeoBundle 'kokakolako/vim-hemisu-airline'
 
 " -------------------------------------------------------------------------------------------------
 call neobundle#end()
 
+syntax enable
+
 filetype plugin on
 filetype plugin indent on
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
+" Check for uninstalled bundles
 NeoBundleCheck

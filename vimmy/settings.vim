@@ -11,12 +11,12 @@ endif
 
 " Highlight whitespace
 " -------------------------------------------------------------------------------------------------
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+"highlight ExtraWhitespace ctermbg=red guibg=red
+"match ExtraWhitespace /\s\+$/
+"autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+"autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+"autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+"autocmd BufWinLeave * call clearmatches()
 
 " Trim Whitespace on save
 "autocmd FileType php,ruby,python,coffee,js,java,css
@@ -40,10 +40,13 @@ au BufNewFile,BufReadPost *.yml setl shiftwidth=2 tabstop=2 expandtab
 
 " Folding
 " -------------------------------------------------------------------------------------------------
-augroup vimrc
-  au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
-augroup END
+autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent
+autocmd BufNewFile,BufReadPost *.py setlocal foldmethod=indent
+
+"augroup vimrc
+  "au BufReadPre * setlocal foldmethod=indent
+  "au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+"augroup END
 
 " AutoClose
 " -------------------------------------------------------------------------------------------------

@@ -16,12 +16,20 @@ if has("gui_running")
     set guioptions-=T
 
     " Transparency
-    set transparency=5
+    "set transparency=5
 
     " GUI Specific theme
     "----------------------------
-    " set background=light
-    " colorscheme solarized
+    set background=light
+    colorscheme hemisu
+    let g:airline_theme='hemisu_airline'
+
+    " Custom settings for pencil theme
+
+    hi SpellBad ctermfg=160 ctermbg=254 guifg=#d70000 guibg=#E5E6E6
+    hi SpellCap ctermfg=214 ctermbg=254 guifg=#ffaf00 guibg=#E5E6E6
+
+
 else
     set t_Co=256
     set term=xterm-256color

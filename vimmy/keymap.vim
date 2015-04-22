@@ -17,10 +17,21 @@ map <silent> <S-Up> <C-W>+
 map <silent> <S-Left> <C-w>>
 
 " Switch Panes
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
+
+" Enable . command in visual mode
+vnoremap . :normal .<cr>
+
+" switch between current and last buffer
+nmap <c-Tab> <c-^>
+
+map <silent> <C-h> :call WinMove('h')<cr>
+map <silent> <C-j> :call WinMove('j')<cr>
+map <silent> <C-k> :call WinMove('k')<cr>
+map <silent> <C-l> :call WinMove('l')<cr>
 
 " NERDTree Settings
 nnoremap <F1> :set hlsearch!<CR>
@@ -30,11 +41,14 @@ map <F4> :NERDTree .<cr>
 "map <F4> :NERDTreeFromBookmark
 nnoremap <F5> :TlistToggle<CR>
 
-" FIX: Replace with leader keymaps instead
-inoremap <C-z> <C-O>za
-nnoremap <C-z> za
-onoremap <C-z> <C-C>za
-vnoremap <C-z> zf
+inoremap <space> <C-O>za
+nnoremap <space> za
+onoremap <space> <C-C>za
+vnoremap <space> zf
+
+" scroll the viewport faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 " EasyMotion
 "map  / <Plug>(easymotion-sn)

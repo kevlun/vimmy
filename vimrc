@@ -7,8 +7,8 @@
 " From 'VIMRC you’re doing it wrong! <http://bamgreeneggsandham.com/2013/11/19/vimrc-your-doing-it-wrong/>'
 let s:vimmy = '~/.vimmy/'
 let config_list = [
-    \ 'base.vim',
     \ 'plugins.vim',
+    \ 'base.vim',
     \ 'functions.vim',
     \ 'theme.vim',
     \ 'settings.vim',

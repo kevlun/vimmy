@@ -51,4 +51,4 @@ set noequalalways
 " Set Invisble characters
 set listchars=tab:▸\ ,eol:¬
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
