@@ -22,6 +22,7 @@ NeoBundle 'https://github.com/bling/vim-airline.git'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'mileszs/ack.vim'
+NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'ivalkeen/vim-ctrlp-tjump'
 NeoBundle 'taglist.vim'
@@ -32,6 +33,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tsukkee/unite-tag'
 NeoBundle 'Shougo/neomru.vim'
+
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \   'windows' : 'tools\\update-dll-mingw',
@@ -41,6 +43,17 @@ NeoBundle 'Shougo/vimproc.vim', {
 \   'unix' : 'gmake',
 \   },
 \ }
+
+"NeoBundle 'SirVer/ultisnips'
+"NeoBundle 'honza/vim-snippets'
+"NeoBundle 'Valloric/YouCompleteMe', {
+ "\ 'build'      : {
+    "\ 'mac'     : './install.sh --gocode-completer',
+    "\ 'unix'    : './install.sh --clang-completer --system-libclang --omnisharp-completer',
+    "\ 'windows' : './install.sh --clang-completer --system-libclang --omnisharp-completer',
+    "\ 'cygwin'  : './install.sh --clang-completer --system-libclang --omnisharp-completer'
+    "\ }
+ "\ }
 
 " Linter
 " -------------------------------------------------------------------------------------------------
@@ -61,6 +74,8 @@ NeoBundle 'kchmck/vim-coffee-script'
 " PHP
 " -------------------------------------------------------------------------------------------------
 NeoBundle 'vim-scripts/phpfolding.vim', {'script_type': 'ftplugin'}
+NeoBundle 'm2mdas/phpcomplete-extended'
+"NeoBundle 'spf13/PIV'
 
 " Python
 " -------------------------------------------------------------------------------------------------

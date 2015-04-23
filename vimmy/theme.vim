@@ -3,7 +3,8 @@ set background=dark
 colorscheme hybrid
 
 if has("gui_running")
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
+    "set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
+    set guifont=Input\ Mono\ Narrow:h14
 
     " Hide scrollbars
     set guioptions-=r
@@ -17,6 +18,9 @@ if has("gui_running")
 
     " Transparency
     "set transparency=5
+
+    " Vertical linespacing
+    set linespace=10
 
     " GUI Specific theme
     "----------------------------

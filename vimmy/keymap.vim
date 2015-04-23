@@ -47,8 +47,8 @@ onoremap <space> <C-C>za
 vnoremap <space> zf
 
 " scroll the viewport faster
-nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
+nnoremap <C-z> 3<C-e>
+nnoremap <C-x> 3<C-y>
 
 " EasyMotion
 "map  / <Plug>(easymotion-sn)
