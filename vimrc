@@ -11,6 +11,7 @@ let config_list = [
     \ 'base.vim',
     \ 'functions.vim',
     \ 'theme.vim',
+    \ 'statusline.vim',
     \ 'settings.vim',
     \ 'leader.vim',
     \ 'keymap.vim',

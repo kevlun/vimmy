@@ -28,8 +28,9 @@ set nowritebackup
 " Fix Backspace
 set backspace=indent,eol,start
 set encoding=utf-8
-set fillchars+=stl:\ ,stlnc:\
+set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:- " Characters to fill the statuslines and vertical separators.
 set laststatus=2
+set noshowmode
 set showmatch
 set ruler
 set hlsearch
@@ -47,6 +48,8 @@ set foldenable
 set antialias
 set linespace=6
 set noequalalways
+
+set hidden
 
 " Set Invisble characters
 set listchars=tab:▸\ ,eol:¬

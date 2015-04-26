@@ -18,22 +18,12 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " UI & General
 " -------------------------------------------------------------------------------------------------
-NeoBundle 'https://github.com/bling/vim-airline.git'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'szw/vim-ctrlspace'
-NeoBundle 'kien/ctrlp.vim'
-NeoBundle 'ivalkeen/vim-ctrlp-tjump'
-NeoBundle 'taglist.vim'
 NeoBundle 'jiangmiao/auto-pairs'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'tsukkee/unite-tag'
-NeoBundle 'Shougo/neomru.vim'
-
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \   'windows' : 'tools\\update-dll-mingw',
@@ -44,8 +34,14 @@ NeoBundle 'Shougo/vimproc.vim', {
 \   },
 \ }
 
-"NeoBundle 'SirVer/ultisnips'
+" Snippets
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'SirVer/ultisnips'
 "NeoBundle 'honza/vim-snippets'
+
+" AutoComplete
+" -------------------------------------------------------------------------------------------------
+NeoBundle 'Shougo/neocomplete.vim'
 "NeoBundle 'Valloric/YouCompleteMe', {
  "\ 'build'      : {
     "\ 'mac'     : './install.sh --gocode-completer',
@@ -64,8 +60,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'idanarye/vim-merginal'
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'mhinz/vim-signify'
-NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+" NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 
 " Coffee-Script
 " -------------------------------------------------------------------------------------------------
@@ -98,7 +93,6 @@ NeoBundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 NeoBundle 'tomasr/molokai'
 NeoBundle 'reedes/vim-colors-pencil'
 NeoBundle 'noahfrederick/vim-hemisu'
-NeoBundle 'kokakolako/vim-hemisu-airline'
 
 " -------------------------------------------------------------------------------------------------
 call neobundle#end()
