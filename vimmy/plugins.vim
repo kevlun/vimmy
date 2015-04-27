@@ -22,8 +22,10 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'szw/vim-ctrlspace'
+NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \   'windows' : 'tools\\update-dll-mingw',

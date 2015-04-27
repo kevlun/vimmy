@@ -5,7 +5,7 @@ colorscheme hybrid
 
 if has("gui_running")
     "set guifont=Ubuntu\ Mono\ derivative\ Powerline:h16
-    set guifont=Input\ Mono\ Narrow:h14
+    set guifont=Input\ Mono\ Narrow:h18
 
     " Hide scrollbars
     set guioptions-=r
