@@ -36,8 +36,8 @@ NeoBundle 'Shougo/vimproc.vim', {
 
 " Snippets
 " -------------------------------------------------------------------------------------------------
-NeoBundle 'SirVer/ultisnips'
-"NeoBundle 'honza/vim-snippets'
+" NeoBundle 'SirVer/ultisnips'
+" NeoBundle 'honza/vim-snippets'
 
 " AutoComplete
 " -------------------------------------------------------------------------------------------------
