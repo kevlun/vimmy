@@ -4,6 +4,7 @@
 syntax on
 
 set mouse=a                         " Enable mouse
+set ttymouse=xterm2
 set relativenumber
 set number
 set shell=/bin/bash\ -li

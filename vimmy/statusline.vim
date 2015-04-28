@@ -2,11 +2,11 @@
 " -------------------------------------------------------------------------------------------------
 "
 function! Status(winnum)
-    hi NormalMode guifg=#ffffff guibg=#6cc644
-    hi InsertMode guifg=#ffffff guibg=#4183c4
-    hi ReplaceMode guifg=#ffffff guibg=#bd2c00
-    hi VisualMode guifg=#ffffff guibg=#ff9933
-    hi InactiveMode guifg=#ffffff guibg=#999999
+    hi NormalMode guifg=#ffffff guibg=#6cc644 ctermfg=231 ctermbg=77
+    hi InsertMode guifg=#ffffff guibg=#4183c4 ctermfg=231 ctermbg=68
+    hi ReplaceMode guifg=#ffffff guibg=#bd2c00 ctermfg=231 ctermbg=124
+    hi VisualMode guifg=#ffffff guibg=#ff9933 ctermfg=231 ctermbg=209
+    hi InactiveMode guifg=#ffffff guibg=#999999 ctermfg=231 ctermbg=102
 
   let active = a:winnum == winnr()
   let bufnum = winbufnr(a:winnum)
