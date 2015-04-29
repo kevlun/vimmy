@@ -95,6 +95,7 @@ NeoBundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 NeoBundle 'tomasr/molokai'
 NeoBundle 'reedes/vim-colors-pencil'
 NeoBundle 'noahfrederick/vim-hemisu'
+NeoBundle 'kevlun/vim-lucid'
 
 " -------------------------------------------------------------------------------------------------
 call neobundle#end()

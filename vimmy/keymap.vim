@@ -56,3 +56,6 @@ nnoremap <C-x> 3<C-y>
 "map  n <Plug>(easymotion-next)
 "map  N <Plug>(easymotion-prev)
 
+" Show syntax highlighting group for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+

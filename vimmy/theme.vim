@@ -1,7 +1,7 @@
 " THEME SETTINGS
 " -------------------------------------------------------------------------------------------------
 set background=dark
-colorscheme hemisu
+colorscheme lucid
 
 if has("gui_running")
     set guifont=Input\ Mono\ Narrow:h14
@@ -24,7 +24,7 @@ if has("gui_running")
 
     " GUI Specific theme
     "----------------------------
-    set background=light
+    " set background=light
 else
     set t_Co=256
     set term=xterm-256color
