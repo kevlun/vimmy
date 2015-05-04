@@ -57,12 +57,11 @@ NeoBundle 'Shougo/neocomplete.vim'
 " -------------------------------------------------------------------------------------------------
 NeoBundle 'scrooloose/syntastic'
 
-" Git
+" Version control
 " -------------------------------------------------------------------------------------------------
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'idanarye/vim-merginal'
-NeoBundle 'airblade/vim-gitgutter'
-" NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+NeoBundle 'mhinz/vim-signify'
 
 " Coffee-Script
 " -------------------------------------------------------------------------------------------------
@@ -84,18 +83,15 @@ NeoBundle 'jmcantrell/vim-virtualenv'
 " -------------------------------------------------------------------------------------------------
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'DAddYE/soda.vim'
-NeoBundle 'croaky/vim-colors-github'
-NeoBundle 'sickill/vim-monokai'
 NeoBundle 'jonathanfilip/vim-lucius'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'zeis/vim-kolor'
 NeoBundle 'notpratheek/vim-luna'
 NeoBundle 'zenorocha/dracula-theme', {'rtp': 'vim/'}
-NeoBundle 'tomasr/molokai'
 NeoBundle 'reedes/vim-colors-pencil'
 NeoBundle 'noahfrederick/vim-hemisu'
 NeoBundle 'kevlun/vim-lucid'
+NeoBundle 'jordwalke/flatlandia'
 
 " -------------------------------------------------------------------------------------------------
 call neobundle#end()

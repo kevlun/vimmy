@@ -44,7 +44,7 @@ set autoindent
 set smartindent
 set expandtab
 set cursorline
-set foldlevel=99
+" set foldlevel=99
 set foldenable
 set antialias
 set linespace=6

@@ -47,8 +47,16 @@ onoremap <space> <C-C>za
 vnoremap <space> zf
 
 " scroll the viewport faster
-nnoremap <C-z> 3<C-e>
-nnoremap <C-x> 3<C-y>
+nnoremap <C-a> 3<C-e>
+nnoremap <C-s> 3<C-y>
+
+" Move line up/down
+nnoremap <D-j> :m .+1<CR>==
+nnoremap <D-k> :m .-2<CR>==
+inoremap <D-j> <Esc>:m .+1<CR>==gi
+inoremap <D-k> <Esc>:m .-2<CR>==gi
+vnoremap <D-j> :m '>+1<CR>gv=gv
+vnoremap <D-k> :m '<-2<CR>gv=gv
 
 " EasyMotion
 "map  / <Plug>(easymotion-sn)
