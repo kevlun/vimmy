@@ -36,16 +36,21 @@ nnoremap <silent> <leader>gj :<C-u>Gpull<CR>
 nnoremap <silent> <leader>gk :<C-u>Gpush<CR>
 nnoremap <silent> <leader>gf :<C-u>Gfetch<CR>
 
-" Unite
-"nnoremap <leader>o :<C-u>Unite -no-split -buffer-name=files   -start-insert file_rec/async:!<cr>
-"nnoremap <leader>ot :Unite file_rec/async -default-action=tabopen -buffer=files -start-insert<cr>
-"nnoremap <leader>os :Unite file_rec/async -default-action=split -buffer=files -start-instert<cr>
-"nnoremap <leader>ov :Unite file_rec/async -default-action=vsplit -buffer=files -start-instert<cr>
-
-"nnoremap <leader>f :<C-u>Unite -no-split -buffer-name=files   -start-insert file<cr>
-"nnoremap <leader>- :<C-u>Unite -no-split -buffer-name=mru     -start-insert file_mru<cr>
-"nnoremap <leader>. :<C-u>Unite -no-split -buffer-name=buffer  buffer<cr>
-
-"nnoremap <silent><leader>f :Unite -silent -start-insert file_rec/async:!:/home/jayflo/<CR>
-"nnoremap <silent><leader>s :Unite -silent -quick-match buffer<CR>
-"nnoremap <silent><Leader>y :Unite -silent history/yank<CR>
+if isdirectory(expand("~/.vim/bundle/tabular"))
+    nmap <Leader>a& :Tabularize /&<CR>
+    vmap <Leader>a& :Tabularize /&<CR>
+    nmap <Leader>a= :Tabularize /^[^=]*\zs=<CR>
+    vmap <Leader>a= :Tabularize /^[^=]*\zs=<CR>
+    nmap <Leader>a=> :Tabularize /=><CR>
+    vmap <Leader>a=> :Tabularize /=><CR>
+    nmap <Leader>a: :Tabularize /:<CR>
+    vmap <Leader>a: :Tabularize /:<CR>
+    nmap <Leader>a:: :Tabularize /:\zs<CR>
+    vmap <Leader>a:: :Tabularize /:\zs<CR>
+    nmap <Leader>a, :Tabularize /,<CR>
+    vmap <Leader>a, :Tabularize /,<CR>
+    nmap <Leader>a,, :Tabularize /,\zs<CR>
+    vmap <Leader>a,, :Tabularize /,\zs<CR>
+    nmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+    vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
+endif

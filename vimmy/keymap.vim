@@ -36,10 +36,8 @@ map <silent> <C-l> :call WinMove('l')<cr>
 " NERDTree Settings
 nnoremap <F1> :set hlsearch!<CR>
 map <F2> :set list!<cr>
-map <F3> :execute 'NERDTreeToggle ' . getcwd()<cr>
-map <F4> :NERDTree .<cr>
-"map <F4> :NERDTreeFromBookmark
-nnoremap <F5> :TlistToggle<CR>
+map <F3> :IndentLinesToggle<cr>
+map <F4> :execute 'NERDTreeToggle ' . getcwd()<cr>
 
 inoremap <space> <C-O>za
 nnoremap <space> za

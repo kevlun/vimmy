@@ -40,7 +40,7 @@ au BufNewFile,BufReadPost *.yml setl shiftwidth=2 tabstop=2 expandtab
 
 " Folding
 " -------------------------------------------------------------------------------------------------
-autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent
+autocmd BufNewFile,BufReadPost *.coffee setlocal foldmethod=indent nofoldenable
 autocmd BufNewFile,BufReadPost *.py setlocal foldmethod=indent
 
 "augroup vimrc

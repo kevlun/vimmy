@@ -26,6 +26,8 @@ NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/vimproc.vim', {
 \ 'build' : {
 \   'windows' : 'tools\\update-dll-mingw',
@@ -92,6 +94,7 @@ NeoBundle 'reedes/vim-colors-pencil'
 NeoBundle 'noahfrederick/vim-hemisu'
 NeoBundle 'kevlun/vim-lucid'
 NeoBundle 'jordwalke/flatlandia'
+NeoBundle 'john2x/flatui.vim'
 
 " -------------------------------------------------------------------------------------------------
 call neobundle#end()
