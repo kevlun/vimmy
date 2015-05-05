@@ -56,6 +56,25 @@ inoremap <D-k> <Esc>:m .-2<CR>==gi
 vnoremap <D-j> :m '>+1<CR>gv=gv
 vnoremap <D-k> :m '<-2<CR>gv=gv
 
+" Some borrowed Emacs bindings
+
+" Use Ctrl-x Ctrl-s for saving
+nnoremap <C-x><C-s> :w<CR>
+inoremap <C-x><C-s> <ESC>:w<CR>
+vnoremap <C-x><C-s> <ESC>:w<CR>
+
+" Open files quickly using Ctrl-Space FuzzyFinder
+nnoremap <C-x><C-f> :CtrlSpace O<CR>
+inoremap <C-x><C-f> <ESC>:CtrlSpace O<CR>
+vnoremap <C-x><C-f> <ESC>:CtrlSpace O<CR>
+
+" Show open buffers
+nnoremap <C-x>b :CtrlSpace<CR>
+inoremap <C-x>b <ESC>:CtrlSpace<CR>
+vnoremap <C-x>b <ESC>:CtrlSpace<CR>
+
+
+
 " EasyMotion
 "map  / <Plug>(easymotion-sn)
 "omap / <Plug>(easymotion-tn)
