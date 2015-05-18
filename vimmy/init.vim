@@ -1,5 +1,8 @@
 " GENERAL SETTINGS
 " -------------------------------------------------------------------------------------------------
+
+set nocompatible
+
 " Set syntax highlighting on
 syntax on
 
@@ -29,7 +32,8 @@ set nowritebackup
 " Fix Backspace
 set backspace=indent,eol,start
 set encoding=utf-8
-set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:- " Characters to fill the statuslines and vertical separators.
+set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:- " Characters to fill the statuslines and vertical separators.
+" set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:- " Characters to fill the statuslines and vertical separators.
 set laststatus=2
 set noshowmode
 set showmatch
@@ -46,15 +50,23 @@ set autoindent
 set smartindent
 set expandtab
 set cursorline
-" set foldlevel=99
 set foldenable
 set antialias
 set linespace=6
 set noequalalways
+set wildmenu
 
+" Autoload file on external changes
+set autoread
+
+" Hide abandoned buffers
 set hidden
 
 " Set Invisble characters
 set listchars=tab:▸\ ,eol:¬
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+" Global ignore pattern
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,__pycache__
+
+filetype plugin on
+filetype plugin indent on

@@ -23,9 +23,3 @@ let g:NERDTreeIndicatorMap = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
-
-" NERDTreeTabs
-let g:nerdtree_tabs_autofind=1
-
-" Don't display NERDTree on GUI start
-let g:nerdtree_tabs_open_on_gui_startup=0

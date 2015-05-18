@@ -14,7 +14,7 @@ nmap <leader>t :tabnew<cr>
 "nmap <leader>. :bp<cr>
 
 " Search with Ack
-nmap <leader>a <Esc>:Ack!
+nmap <leader>s <Esc>:Ack!
 
 " Strip whitespace
 nnoremap <leader>l :Strip<cr>

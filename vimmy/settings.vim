@@ -48,6 +48,9 @@ autocmd BufNewFile,BufReadPost *.py setlocal foldmethod=indent
   "au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 "augroup END
 
+" Autochange CWD (local) to directory of current file
+autocmd BufEnter * if expand("%:p:h") !~ '^/tmp' | silent! lcd %:p:h | endif
+
 " AutoClose
 " -------------------------------------------------------------------------------------------------
 autocmd CompleteDone * pclose

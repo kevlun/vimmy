@@ -6,6 +6,8 @@ imap jj <Esc>
 " Use Shift Tab to unindent
 nmap <Tab> a<C-t><Esc>
 nmap <S-Tab> a<C-d><Esc>
+" nmap <Tab> >>
+" nmap <S-Tab> <<
 imap <S-Tab> <C-d>
 vmap <Tab> :><CR>gv
 vmap <S-Tab> :<<CR>gv
@@ -37,7 +39,8 @@ map <silent> <C-l> :call WinMove('l')<cr>
 nnoremap <F1> :set hlsearch!<CR>
 map <F2> :set list!<cr>
 map <F3> :IndentLinesToggle<cr>
-map <F4> :execute 'NERDTreeToggle ' . getcwd()<cr>
+" map <F4> :execute 'NERDTreeToggle ' . getcwd()<cr>
+map <F4> :NERDTreeToggle %:p:h<CR>
 
 inoremap <space> <C-O>za
 nnoremap <space> za
@@ -45,8 +48,8 @@ onoremap <space> <C-C>za
 vnoremap <space> zf
 
 " scroll the viewport faster
-nnoremap <C-a> 3<C-e>
-nnoremap <C-s> 3<C-y>
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 " Move line up/down
 nnoremap <D-j> :m .+1<CR>==
