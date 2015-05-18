@@ -1,10 +1,10 @@
 " THEME SETTINGS
 " -------------------------------------------------------------------------------------------------
-set background=dark
+set background=light
 colorscheme lucid
 
 if has("gui_running")
-    set guifont=Fira\ Mono:h14
+    set guifont=InputMonoNarrow\ Light:h14
 
     " Hide scrollbars
     set guioptions-=r

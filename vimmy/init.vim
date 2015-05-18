@@ -29,13 +29,15 @@ set nowritebackup
 " Fix Backspace
 set backspace=indent,eol,start
 set encoding=utf-8
-set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:- " Characters to fill the statuslines and vertical separators.
+set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:- " Characters to fill the statuslines and vertical separators.
 set laststatus=2
 set noshowmode
 set showmatch
 set ruler
 set hlsearch
 set incsearch
+set smartcase
+set smarttab
 set noerrorbells
 set visualbell
 set tabstop=4
