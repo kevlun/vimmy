@@ -25,7 +25,7 @@ endif
 " let g:syntastic_stl_format .= ' (line %fw)} '
 
 let g:syntastic_stl_format = ' %E{' . g:syntastic_error_symbol . ' %e}'
-let g:syntastic_stl_format .= '%W{ ' . g:syntastic_warning_symbol . ' %w}'
+let g:syntastic_stl_format .= '%W{ ' . g:syntastic_warning_symbol . ' %w }'
 
 " Python
 let g:syntastic_python_checkers = ['flake8', 'pylint']

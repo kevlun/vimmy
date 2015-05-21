@@ -76,7 +76,16 @@ nnoremap <C-x>b :CtrlSpace<CR>
 inoremap <C-x>b <ESC>:CtrlSpace<CR>
 vnoremap <C-x>b <ESC>:CtrlSpace<CR>
 
-
+" Incsearch Plugin
+map /  <Plug>(incsearch-forward)
+map ?  <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+map n  <Plug>(incsearch-nohl-n)
+map N  <Plug>(incsearch-nohl-N)
+map *  <Plug>(incsearch-nohl-*)
+map #  <Plug>(incsearch-nohl-#)
+map g* <Plug>(incsearch-nohl-g*)
+map g# <Plug>(incsearch-nohl-g#)
 
 " EasyMotion
 "map  / <Plug>(easymotion-sn)

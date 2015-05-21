@@ -4,7 +4,8 @@ set background=light
 colorscheme lucid
 
 if has("gui_running")
-    set guifont=InputMonoNarrow\ Light:h14
+    " Use set guifont=* to set and view with set guifont?
+    set guifont=Monaco:h12
 
     " Hide scrollbars
     set guioptions-=r

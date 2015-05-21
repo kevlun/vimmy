@@ -6,8 +6,10 @@ set nocompatible
 " Set syntax highlighting on
 syntax on
 
-set mouse=a                         " Enable mouse
-set ttymouse=xterm2
+if has("mouse")
+    set mouse=a                         " Enable mouse
+    set ttymouse=xterm2
+endif
 set relativenumber
 set number
 set shell=/bin/bash\ -li
@@ -32,8 +34,6 @@ set nowritebackup
 " Fix Backspace
 set backspace=indent,eol,start
 set encoding=utf-8
-set fillchars=stl:\ ,stlnc:\ ,vert:\ ,fold:- " Characters to fill the statuslines and vertical separators.
-" set fillchars=stl:\ ,stlnc:\ ,vert:\│,fold:- " Characters to fill the statuslines and vertical separators.
 set laststatus=2
 set noshowmode
 set showmatch
@@ -46,6 +46,7 @@ set noerrorbells
 set visualbell
 set tabstop=4
 set shiftwidth=4
+set shiftround
 set autoindent
 set smartindent
 set expandtab
@@ -63,7 +64,25 @@ set autoread
 set hidden
 
 " Set Invisble characters
-set listchars=tab:▸\ ,eol:¬
+display+=lastline               " Show as much as possible of wrapped last line
+set fillchars=vert:\ ,diff:\    " Use space for vertical split, diff fill char
+if has("linebreak")
+  set linebreak                 " Wrap lines at word boundaries
+  set showbreak=...
+  if exists("+breakindent")
+    set breakindent             " Indent soft-wrapped lines
+  endif
+endif
+set nowrap
+set listchars=tab:>\ ,extends:>,precedes:<,nbsp:+
+if &termencoding ==# "utf-8" || &encoding ==# "utf-8"
+  let &fillchars = "vert:\u2502,diff: "
+  let &listchars = "tab:\u25b8 ,extends:\u276f,precedes:\u276e,nbsp:\u2334"
+  if has("linebreak")
+    let &showbreak = "\u21aa"
+  endif
+  highlight VertSplit ctermbg=NONE guibg=NONE
+endif
 
 " Global ignore pattern
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,__pycache__
