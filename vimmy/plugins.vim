@@ -28,36 +28,34 @@ if has("vim_starting")
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-eunuch'
   Plug 'haya14busa/incsearch.vim'
-  Plug 'Shougo/vimproc.vim', { 'do': 'make' }
+  Plug 'Konfekt/FastFold'
+  " Plug 'Shougo/vimproc.vim', { 'do': 'make' }
   " }}}
   " Tags ---------------------------------------------------------------------{{{
   " Plug 'xolox/vim-misc' " Requried by easytags
   " Plug 'xolox/vim-easytags'
   " }}}
   " Snippets -----------------------------------------------------------------{{{
+  Plug 'honza/vim-snippets'
   Plug 'SirVer/ultisnips'
-  " NeoBundle 'honza/vim-snippets'
   " }}}
   " AutoComplete -------------------------------------------------------------{{{
-  " Alternative: NeoBundle 'Shougo/neocomplete.vim'
+  " Alternative: Plug 'Shougo/neocomplete.vim'
   Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
-  " Plug 'ervandew/supertab'
   " }}}
   " Linter -------------------------------------------------------------------{{{
   Plug 'scrooloose/syntastic'
   " }}}
   " Version Control ----------------------------------------------------------{{{
-  Plug 'scrooloose/syntastic'
   Plug 'tpope/vim-fugitive'
   Plug 'idanarye/vim-merginal'
   Plug 'mhinz/vim-signify'
   " }}}
   " Javascript ---------------------------------------------------------------{{{
-  Plug 'scrooloose/syntastic'
   Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+  " Plug 'marijnh/tern_for_vim', { 'do': 'npm install', 'for': 'javascript' }
   " }}}
   " CoffeeScript -------------------------------------------------------------{{{
-  Plug 'scrooloose/syntastic'
   Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
   " }}}
   " PHP ----------------------------------------------------------------------{{{
@@ -66,6 +64,7 @@ if has("vim_starting")
   " Plug 'spf13/PIV', { 'for': 'php' }
   " }}}
   " Python -------------------------------------------------------------------{{{
+  Plug 'hdima/python-syntax', { 'for': 'python' }
   Plug 'public/vim-sort-python-imports', { 'for': 'python' }
   Plug 'davidhalter/jedi-vim', { 'for': 'python' }
   Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
@@ -83,8 +82,10 @@ if has("vim_starting")
   Plug 'kevlun/vim-lucid'
   Plug 'jordwalke/flatlandia'
   Plug 'john2x/flatui.vim'
+  Plug 'NLKNguyen/papercolor-theme'
   " }}}
 
   call plug#end()
 endif
+
 " vim: fdm=marker:sw=2:sts=2:et

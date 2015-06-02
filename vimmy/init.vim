@@ -23,7 +23,7 @@ set nowritebackup
 " Enable Backup
 " -------------------------------------
 "set backup
-" Creat backup and tmp directories
+" Create backup and tmp directories
 " Delete old temp files on start
 "silent execute '!mkdir -p ~/.vim/temp'
 "silent execute '!rm -f ~/.vim/temp/*~'
@@ -35,7 +35,7 @@ set nowritebackup
 set backspace=indent,eol,start
 set encoding=utf-8
 set laststatus=2
-set noshowmode
+" set noshowmode
 set showmatch
 set ruler
 set hlsearch
@@ -63,9 +63,7 @@ set autoread
 " Hide abandoned buffers
 set hidden
 
-" Set Invisble characters
-display+=lastline               " Show as much as possible of wrapped last line
-set fillchars=vert:\ ,diff:\    " Use space for vertical split, diff fill char
+" display+=lastline               " Show as much as possible of wrapped last line
 if has("linebreak")
   set linebreak                 " Wrap lines at word boundaries
   set showbreak=...
@@ -74,6 +72,10 @@ if has("linebreak")
   endif
 endif
 set nowrap
+
+set fillchars=vert:\ ,diff:\    " Use space for vertical split, diff fill char
+
+" Set Invisble characters
 set listchars=tab:>\ ,extends:>,precedes:<,nbsp:+
 if &termencoding ==# "utf-8" || &encoding ==# "utf-8"
   let &fillchars = "vert:\u2502,diff: "
@@ -81,7 +83,6 @@ if &termencoding ==# "utf-8" || &encoding ==# "utf-8"
   if has("linebreak")
     let &showbreak = "\u21aa"
   endif
-  highlight VertSplit ctermbg=NONE guibg=NONE
 endif
 
 " Global ignore pattern

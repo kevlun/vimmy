@@ -36,4 +36,8 @@ let g:syntastic_python_pylint_args = "--max-line-length=100"
 let g:syntastic_coffee_checkers = ['coffeelint', 'coffee']
 
 " PHP
-let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"
+let g:syntastic_phpcs_disable = 1
+let g:syntastic_phpmd_disable = 1
+let g:syntastic_php_checkers = ['php']
+let g:syntastic_quiet_messages = { "type": "style" }
+" let g:syntastic_php_phpcs_args="--report=csv --standard=PSR2"

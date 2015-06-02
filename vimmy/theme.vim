@@ -5,7 +5,8 @@ colorscheme lucid
 
 if has("gui_running")
     " Use set guifont=* to set and view with set guifont?
-    set guifont=Monaco:h12
+    set guifont=Ubuntu\ Mono:h14
+    " set guifont=Monaco:h12
 
     " Hide scrollbars
     set guioptions-=r

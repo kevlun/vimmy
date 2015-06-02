@@ -20,11 +20,14 @@ nmap <leader>s <Esc>:Ack!
 nnoremap <leader>l :Strip<cr>
 
 " CTRL-P
-nnoremap <Leader>o :execute 'CtrlP ' . getcwd()<cr>
-nnoremap <Leader>- :CtrlPMRU<cr>
-nnoremap <Leader>. :CtrlPBuffer<cr>
-nnoremap <leader>* :CtrlPtjump<cr>
-vnoremap <leader>* :CtrlPtjumpVisual<cr>
+" nnoremap <Leader>o :execute 'CtrlP ' . getcwd()<cr>
+" nnoremap <Leader>- :CtrlPMRU<cr>
+" nnoremap <Leader>. :CtrlPBuffer<cr>
+" nnoremap <leader>* :CtrlPtjump<cr>
+" vnoremap <leader>* :CtrlPtjumpVisual<cr>
+
+" CTRL-SPACE
+" nnoremap <silent> <leader>o :<C-u>CtrlSpace<CR>O
 
 " Fugitive
 nnoremap <silent> <leader>gs :<C-u>Gstatus<CR>
@@ -36,7 +39,7 @@ nnoremap <silent> <leader>gj :<C-u>Gpull<CR>
 nnoremap <silent> <leader>gk :<C-u>Gpush<CR>
 nnoremap <silent> <leader>gf :<C-u>Gfetch<CR>
 
-if isdirectory(expand("~/.vim/bundle/tabular"))
+if isdirectory(expand("~/.vim/plugged/tabular"))
     nmap <Leader>a& :Tabularize /&<CR>
     vmap <Leader>a& :Tabularize /&<CR>
     nmap <Leader>a= :Tabularize /^[^=]*\zs=<CR>

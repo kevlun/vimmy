@@ -164,7 +164,7 @@ let &statusline .= '%4*%{&readonly && &modifiable && !&modified?"\u25cb":""}%*'
 let &statusline .= "%="
 let &statusline .= "%#StatusLineNC#%{StatuslineIndent()}%* "
 let &statusline .= '%#StatuslineNC#%{(strlen(&fileencoding) && &fileencoding !=# &encoding)?&fileencoding." ":""}'
-let &statusline .= '%{&fileformat!="unix"?" (".&fileformat.") ":""}%*'
+let &statusline .= '%{&fileformat!="unix"?"(".&fileformat.")":""}%*'
 let &statusline .= '%{strlen(&filetype)?&filetype." ":""}'
 let &statusline .= '%4*%{exists("*SyntasticStatuslineFlag")?SyntasticStatuslineFlag():""}%*'
 
