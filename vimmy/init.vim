@@ -34,6 +34,7 @@ set nowritebackup
 " Fix Backspace
 set backspace=indent,eol,start
 set encoding=utf-8
+set fileformats=unix,dos
 set laststatus=2
 " set noshowmode
 set showmatch

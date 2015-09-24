@@ -7,11 +7,10 @@
 " From 'VIMRC you’re doing it wrong! <http://bamgreeneggsandham.com/2013/11/19/vimrc-your-doing-it-wrong/>'
 let s:vimmy = '~/.vimmy/'
 let config_list = [
-    \ 'init.vim',
     \ 'plugins.vim',
+    \ 'init.vim',
     \ 'functions.vim',
     \ 'theme.vim',
-    \ 'statusline.vim',
     \ 'settings.vim',
     \ 'leader.vim',
     \ 'keymap.vim',

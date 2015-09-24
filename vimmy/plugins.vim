@@ -10,8 +10,9 @@ if has("vim_starting")
 
   " UI & Genereal ------------------------------------------------------------{{{
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'kien/ctrlp.vim'
+  Plug 'FelikZ/ctrlp-py-matcher'
   Plug 'mileszs/ack.vim'
-  Plug 'szw/vim-ctrlspace'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'jiangmiao/auto-pairs'
   Plug 'Lokaltog/vim-easymotion'
@@ -29,6 +30,7 @@ if has("vim_starting")
   Plug 'tpope/vim-eunuch'
   Plug 'haya14busa/incsearch.vim'
   Plug 'Konfekt/FastFold'
+  Plug 'bling/vim-airline'
   " Plug 'Shougo/vimproc.vim', { 'do': 'make' }
   " }}}
   " Tags ---------------------------------------------------------------------{{{
@@ -41,7 +43,7 @@ if has("vim_starting")
   " }}}
   " AutoComplete -------------------------------------------------------------{{{
   " Alternative: Plug 'Shougo/neocomplete.vim'
-  Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+  Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
   " }}}
   " Linter -------------------------------------------------------------------{{{
   Plug 'scrooloose/syntastic'
@@ -69,6 +71,10 @@ if has("vim_starting")
   Plug 'davidhalter/jedi-vim', { 'for': 'python' }
   Plug 'jmcantrell/vim-virtualenv', { 'for': 'python' }
   " }}}
+  " Twig -------------------------------------------------------------------{{{
+  Plug 'evidens/vim-twig'
+  " }}}
+
   " Themes ------------------------------------------------------------------ {{{
   Plug 'morhetz/gruvbox'
   Plug 'altercation/vim-colors-solarized'
@@ -83,6 +89,7 @@ if has("vim_starting")
   Plug 'jordwalke/flatlandia'
   Plug 'john2x/flatui.vim'
   Plug 'NLKNguyen/papercolor-theme'
+  Plug 'jdkanani/vim-material-theme'
   " }}}
 
   call plug#end()
